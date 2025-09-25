@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 
 public class Order {
     private List<Product> products;
@@ -13,10 +15,6 @@ public class Order {
         this.products = new ArrayList<>(cart.getProducts());
         this.totalPrice = cart.getTotalPrice();
         this.status = "Нове";
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     @Override
