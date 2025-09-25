@@ -97,7 +97,7 @@ public class Main {
                     String search = scanner.nextLine().toLowerCase();
 
                     List<Product> allProducts = Arrays.asList(product1, product2, product3);
-                    
+
                     List<Product> results = new ArrayList<>();
                     for (Product product : allProducts) {
                         String name = product.getName().toLowerCase();
